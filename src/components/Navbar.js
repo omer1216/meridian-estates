@@ -21,11 +21,14 @@ export default function Navbar() {
     <nav className="bg-[#1C2B2E] px-6 md:px-12 py-4 relative">
       <div className="flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-serif font-bold text-[#FAF8F4] text-lg">
-            Meridian Estates
-          </span>
+          <Image
+            src="/logo.svg"
+            alt="Meridian Estates"
+            width={160}
+            height={32}
+            priority
+          />
         </Link>
-
         <div className="hidden md:flex gap-6 text-sm">
           {links.map((link) => (
             <Link

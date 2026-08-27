@@ -3,6 +3,8 @@ import {Fraunces , Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingActions from "@/components/FloatingActions";
+
 
 
 const fraunces = Fraunces({
@@ -30,9 +32,10 @@ export default function RootLayout({ children }) {
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
+        <FloatingActions />
         </body>
     </html>
   );
