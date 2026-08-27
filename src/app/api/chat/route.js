@@ -6,7 +6,7 @@ const openai = new OpenAI({
   baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
 });
 
-const N8N_WEBHOOK_URL = "http://localhost:5678/webhook/2983ed8e-e1e2-4841-9ae0-948ffa9dc469";
+const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL;
 
 const propertyContext = properties
   .map(
