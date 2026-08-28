@@ -92,6 +92,14 @@ export async function POST(req) {
 
   if (responseMessage.tool_calls) {
     const leadData = JSON.parse(responseMessage.tool_calls[0].function.arguments);
+
+  
+    if (!leadData.email && !leadData.phone) {
+      return Response.json({
+        reply: "Could I grab your email so our team can send you the full details? A phone number works too if you'd prefer.",
+      });
+    }
+
     sendLeadToN8n(leadData);
 
     return Response.json({
