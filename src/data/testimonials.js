@@ -6,7 +6,7 @@ export const testimonials = [
       "I was buying from London and honestly expected a mess. Meridian handled everything over WhatsApp, sent verified documents before I asked, and the plot matched exactly what was listed.",
   },
   {
-    name: "Fatimah.",
+    name: "Fatimah Q.",
     location: "Bought an apartment in Gulberg Greens",
     quote:
       "First time buying property and I had a hundred questions. Their team actually answered all of them instead of rushing me into a decision. No pressure at any point.",
@@ -30,7 +30,7 @@ export const testimonials = [
       "Compared a few agencies before settling on Meridian — they were the only ones who gave me a straight answer about possession timelines instead of vague promises.",
   },
   {
-    name: "Mahrosh.",
+    name: "Mahrosh U.",
     location: "Bought a house in Bahria Town, from Toronto",
     quote:
       "Handled Power of Attorney arrangements for me since I couldn't travel. Made what I thought would be a stressful process genuinely simple.",
