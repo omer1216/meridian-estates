@@ -2,8 +2,8 @@ import OpenAI from "openai";
 import { properties } from "@/data/properties";
 
 const openai = new OpenAI({
-  apiKey: process.env.GEMINI_API_KEY,
-  baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
+  apiKey: process.env.GROQ_API_KEY,
+  baseURL: "https://api.groq.com/openai/v1",
 });
 
 const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL;
@@ -83,7 +83,7 @@ export async function POST(req) {
   const { messages } = await req.json();
 
   const completion = await openai.chat.completions.create({
-    model: "gemini-3.5-flash-lite",
+    model: "llama-3.3-70b-versatile",
     messages: [{ role: "system", content: systemPrompt }, ...messages],
     tools,
   });
